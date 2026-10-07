@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular</title>
+</head>
+
+<body>
+    <h1>Kontaktformular</h1>
+    <form action=“mailto:TAN250635@spengergasse.at” method=“post” enctype=“text/plain”>
+        Vorname:
+        <input type="text" name="vorname" pattern="[A-Za-zÄÖÜäöüß ]{2,50}" required>
+        <br><br>
+        Nachname:
+        <input type="text" name="nachname" pattern="[A-Za-zÄÖÜäöüß ]{2,50}" required>
+        <br><br>
+
+        <input type="radio" name="geschlecht" value="maennlich">Männlich
+        <input type="radio" name="geschlecht" value="weiblich">Weiblich
+        <input type="radio" name="geschlecht" value="divers">Divers
+        <input type="radio" name="geschlecht" value="keineAngabe">Keine Angabe
+
+        <br><br>
+
+        <input type="checkbox" name="interesse" value="sport">Sport
+        <input type="checkbox" name="interesse" value="musik">Musik
+
+        <br><br>
+        <select name="geschlecht">
+            <option value="weiblich">Weiblich</option>
+            <option value="maennlich">Männlich</option>
+            <option value="divers">Divers</option>
+            <option value="keineAngabe" selected>Keine Angabe</option>
+        </select>
+        <br><br>
+        <select name="geschlecht" multiple>
+            <option value="weiblich">Weiblich</option>
+            <option value="maennlich">Männlich</option>
+            <option value="divers">Divers</option>
+            <option value="keineAngabe" selected>Keine Angabe</option>
+        </select>
+        <br><br>
+        <textarea name="kommentar" placeholder="Fügen Sie Ihren Kommentar ein!" maxlength="500"></textarea>
+        <br>
+        <input type="submit" value="Formular abschicken">
+        <input type="reset" value="Formular zurücksetzen">
+    </form>
+</body>
+
+</html>

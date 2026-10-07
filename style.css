@@ -7,13 +7,13 @@ h1 {
     background-color: rgba(109, 40, 217, 0.15);
 }
 
-.border-box {
+* {
   box-sizing: border-box;
 }
 
 .karte {
-    width: 20rem;
-    padding: 1rem;
+    width: 25rem;
+    padding: 2rem;
     border: 2px solid #d9285d;
     border-radius: 3rem;
     background-color: #82bfb7;
